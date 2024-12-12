@@ -1,0 +1,118 @@
+/* Arrière-plan animé */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f7fa, #ffecb3);
+    background-size: 300% 300%;
+    animation: bg-animation 8s ease infinite;
+    color: #333;
+}
+
+/* Animation de l’arrière-plan */
+@keyframes bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Style des titres */
+h1, h2 {
+    color: #0066cc;
+    text-align: center;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+h1:hover {
+    color: #ff4081;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+h2:hover {
+    color: #ff9800;
+}
+
+/* Style de la section profil et description */
+.profile {
+    text-align: center;
+    margin: 20px 0;
+}
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile img:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.description {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #333;
+    background: linear-gradient(90deg, #ff6f91, #ff9671);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Style pour le lien préféré */
+.description a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #1976d2;
+    color: #fff;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+.description a:hover {
+    background: #ff9800;
+    transform: translateY(-3px);
+}
+
+/* Style des sections hobbies, passions et projets */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #ff4081;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de texte sur les titres des sections */
+.section h2 {
+    background: linear-gradient(90deg, #ff4081, #ff9800);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* Liens vers les réseaux sociaux */
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+}
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #1976d2, #ff4081);
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+    background: linear-gradient(90deg, #ff9800, #ff4081);
+    transform: scale(1.1);
+}

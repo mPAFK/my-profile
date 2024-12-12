@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matys Penhoat - Présentation</title>
+    <style>
+        /* Arrière-plan animé */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f7fa, #ffecb3);
+            background-size: 300% 300%;
+            animation: bg-animation 8s ease infinite;
+            color: #333;
+        }
+        
+        /* Animation de l’arrière-plan */
+        @keyframes bg-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Style des titres */
+        h1, h2 {
+            color: #0066cc;
+            text-align: center;
+            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+        h1:hover {
+            color: #ff4081;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        h2:hover {
+            color: #ff9800;
+        }
+
+        /* Style de la section profil et description */
+        .profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.15);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .description {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #333;
+            background: linear-gradient(90deg, #ff6f91, #ff9671);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Style pour le lien préféré */
+        .description a {
+            color: #ff4081;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 8px;
+            background: #1976d2;
+            color: #fff;
+            transition: background 0.4s ease, transform 0.3s ease;
+        }
+        .description a:hover {
+            background: #ff9800;
+            transform: translateY(-3px);
+        }
+
+        /* Style des sections hobbies, passions et projets avec ombres et bordures */
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            border-left: 5px solid #ff4081;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Effet de texte sur les titres des sections */
+        .section h2 {
+            background: linear-gradient(90deg, #ff4081, #ff9800);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        /* Liens vers les réseaux sociaux */
+        .social-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #1976d2, #ff4081);
+            transition: background 0.5s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            background: linear-gradient(90deg, #ff9800, #ff4081);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête principal -->
+    <header>
+        <h1>Bonjour, je suis Matys Penhoat 👋</h1>
+    </header>
+
+    <!-- Photo de profil et description -->
+    <div class="profile">
+        <img src="file:///C:/Users/antho/Downloads/1727623269239-fotor-20241212171041.png" alt="Photo de profil de Matys">
+        <p class="description">Étudiant en 2ème année de bachelor à Audencia, passionné par le marketing digital et les nouvelles technologies !</p>
+    </div>
+
+    <!-- Lien vers un site web préféré -->
+    <div class="description">
+        <p>Un site que j'aime : <a href="https://www.fft.fr/" target="_blank">Fédération Française de Tennis</a></p>
+    </div>
+
+    <!-- Sections pour hobbies, passions et projets -->
+    <section class="section">
+        <h2>Mes hobbies</h2>
+        <p>Je suis un grand passionné de sport, notamment de tennis et de football. J'adore jouer et suivre ces sports, qui me permettent de rester actif et de m’inspirer pour de nouveaux défis.</p>
+    </section>
+
+    <section class="section">
+        <h2>Mes passions</h2>
+        <p>Je suis très intéressé par l’entrepreneuriat et le marketing digital. J’aime explorer les nouvelles tendances et les opportunités dans ces domaines, avec un intérêt particulier pour les marketplaces de créateurs.</p>
+    </section>
+
+    <section class="section">
+        <h2>Projets récents</h2>
+        <p>Actuellement, je travaille sur plusieurs projets liés à la création de contenu numérique et au marketing digital. Mon objectif est d’utiliser ces compétences pour lancer des initiatives entrepreneuriales dans le futur.</p>
+    </section>
+
+    <!-- Liens vers les réseaux sociaux -->
+    <footer class="social-links">
+        <h2>Retrouvez-moi sur les réseaux</h2>
+        <a href="https://www.linkedin.com/in/matys-penhoat-b1637a295/" target="_blank">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
